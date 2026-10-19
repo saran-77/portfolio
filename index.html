@@ -312,15 +312,10 @@ body.term-focus .cursor-ring{opacity:0;visibility:hidden;}
 /* ---------- nav ---------- */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;justify-content:space-between;align-items:center;
+  display:flex;justify-content:flex-end;align-items:center;
   padding:26px 6vw;
   mix-blend-mode:normal;
 }
-.logo{
-  font-family:'JetBrains Mono',monospace;font-size:15px;letter-spacing:0.5px;
-  color:var(--text);
-}
-.logo span{color:var(--cyan);}
 .nav-links{display:flex;gap:38px;font-size:14px;color:var(--text-dim);}
 .nav-links a{position:relative;transition:color .3s;}
 .nav-links a::after{
@@ -611,7 +606,6 @@ body{cursor:auto;}
 <div class="cursor-dot" id="cursorDot"></div>
 
 <nav aria-label="Primary">
-  <div class="logo">SS<span>/</span>dev</div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#stack">Stack</a>
